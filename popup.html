@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="">
+    <title>Betway Betting Casino</title>
+</head>
+<body>
+    <header>
+        <h4 class="header"><img class="logo" src="favicon/android-chrome-512x512.png" alt=""> <p>Betway Casino Betting Bot</p></h4>
+        <nav>
+            <ul id="links">
+                <li>Play</li>
+                <li>Set Strategy</li>
+                <li>Set Pattern</li>
+                <li>Result</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="divs" id="divs">
+        <div id="active">
+            <div class="bets">
+                <h4>SINGLE BET</h4>
+                <ul class="numbers_colors" id="single_bet">
+                </ul>
+                <h4>SPLIT BET</h4>
+                <ul class="numbers_colors" id="split_bet">
+                </ul>
+                <h4>CORNER BET</h4>
+                <ul class="numbers_colors" id="corner_bet">
+                </ul>
+                <h4>STREET BET</h4>
+                <ul class="numbers_colors" id="street_bet">
+                </ul>
+                <h4>LINE BET</h4>
+                <ul class="numbers_colors" id="line_bet">
+                </ul>
+                <h4>OUTSIDE BET</h4>
+                <ul class="numbers_colors" id="outside_bet">
+                </ul>
+            </div>
+              <main>
+                <h4>Fail Times: <b id="failplay">0</b></h4>
+                <h4>Play Times: <b id="timesplay">0</b></h4>
+                <h4>Amount: <b id="amountplay">0</b></h4>
+                <h4>Progression: x<b id="progressplay">1</b></h4>
+              </main> 
+            <center>
+                <h4>Testing pattern: 1 <span>No Match</span><span>Match!</span></h4>
+                <h4>Playing 1: <span>Lost</span><span>Won!</span></h4>
+                <button id="runbot">Run bot</button>
+                <button style="background-color:red;" id="stopbot">Stop bot</button>
+                <button style="background-color:rgb(236, 221, 10);" id="reset">Reset</button>
+            </center>
+        </div>
+        <div>
+            <h3>Inside Bets</h3>
+            <article>
+                <div class="single">
+                    <h4>SINGLE BET</h4>
+                    <select name="amount" id="single_amount">
+                        <option value="50">50</option>
+                        <option value="500">500</option>
+                        <option value="2500">2500</option>
+                        <option value="5000">5000</option>
+                        <option value="12500">12500</option>
+                        <option value="50000">50000</option>
+                    </select>
+                    <select name="times" id="single_times">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <span class="span0"><span>0</span></span>
+                    <span class="span1"><span>1</span></span>
+                    <span class="span2"><span>2</span></span>
+                    <span class="span3"><span>3</span></span>
+                    <span class="span4"><span>4</span></span>
+                    <span class="span5"><span>5</span></span>
+                    <span class="span6"><span>6</span></span>
+                    <span class="span7"><span>7</span></span>
+                    <span class="span8"><span>8</span></span>
+                    <span class="span9"><span>9</span></span>
+                    <span class="span10"><span>10</span></span>
+                    <span class="span11"><span>11</span></span>
+                    <span class="span12"><span>12</span></span>
+                    <span class="span13"><span>13</span></span>
+                    <span class="span14"><span>14</span></span>
+                    <span class="span15"><span>15</span></span>
+                    <span class="span16"><span>16</span></span>
+                    <span class="span17"><span>17</span></span>
+                    <span class="span18"><span>18</span></span>
+                    <span class="span19"><span>19</span></span>
+                    <span class="span20"><span>20</span></span>
+                    <span class="span21"><span>21</span></span>
+                    <span class="span22"><span>22</span></span>
+                    <span class="span23"><span>23</span></span>
+                    <span class="span24"><span>24</span></span>
+                    <span class="span25"><span>25</span></span>
+                    <span class="span26"><span>26</span></span>
+                    <span class="span27"><span>27</span></span>
+                    <span class="span28"><span>28</span></span>
+                    <span class="span29"><span>29</span></span>
+                    <span class="span30"><span>30</span></span>
+                    <span class="span31"><span>31</span></span>
+                    <span class="span32"><span>32</span></span>
+                    <span class="span33"><span>33</span></span>
+                    <span class="span34"><span>34</span></span>
+                    <span class="span35"><span>35</span></span>
+                    <span class="span36"><span>36</span></span>
+                </div>
+                <div class="split">
+                    <h4>SPLIT BET</h4>
+                    <select name="amount" id="split_amount">
+                        <option value="50">50</option>
+                        <option value="500">500</option>
+                        <option value="2500">2500</option>
+                        <option value="5000">5000</option>
+                        <option value="12500">12500</option>
+                        <option value="50000">50000</option>
+                    </select>
+                    <select name="times" id="split_times">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <span class="span0">0</span>
+                    <span class="span1">1<span data-id="0_1"></span></span>
+                    <span class="span2">2<span data-id="0_2"></span></span>
+                    <span class="span3">3<span data-id="0_3"></span></span>
+                    <span class="span4">4<span data-id="1_4"></span></span>
+                    <span class="span5">5<span data-id="2_5"></span></span>
+                    <span class="span6">6<span data-id="3_6"></span></span>
+                    <span class="span7">7<span data-id="4_7"></span></span>
+                    <span class="span8">8<span data-id="5_8"></span></span>
+                    <span class="span9">9<span data-id="6_9"></span></span>
+                    <span class="span10">10<span data-id="7_10"></span></span>
+                    <span class="span11">11<span data-id="8_11"></span></span>
+                    <span class="span12">12<span data-id="9_12"></span></span>
+                    <span class="span13">13<span data-id="10_13"></span></span>
+                    <span class="span14">14<span data-id="11_14"></span></span>
+                    <span class="span15">15<span data-id="12_15"></span></span>
+                    <span class="span16">16<span data-id="13_16"></span></span>
+                    <span class="span17">17<span data-id="14_17"></span></span>
+                    <span class="span18">18<span data-id="15_18"></span></span>
+                    <span class="span19">19<span data-id="16_19"></span></span>
+                    <span class="span20">20<span data-id="17_20"></span></span>
+                    <span class="span21">21<span data-id="18_21"></span></span>
+                    <span class="span22">22<span data-id="19_22"></span></span>
+                    <span class="span23">23<span data-id="20_23"></span></span>
+                    <span class="span24">24<span data-id="21_24"></span></span>
+                    <span class="span25">25<span data-id="22_25"></span></span>
+                    <span class="span26">26<span data-id="23_26"></span></span>
+                    <span class="span27">27<span data-id="24_27"></span></span>
+                    <span class="span28">28<span data-id="25_28"></span></span>
+                    <span class="span29">29<span data-id="26_29"></span></span>
+                    <span class="span30">30<span data-id="27_30"></span></span>
+                    <span class="span31">31<span data-id="28_31"></span></span>
+                    <span class="span32">32<span data-id="29_32"></span></span>
+                    <span class="span33">33<span data-id="30_33"></span></span>
+                    <span class="span34">34<span data-id="31_34"></span></span>
+                    <span class="span35">35<span data-id="32_35"></span></span>
+                    <span class="span36">36<span data-id="33_36"></span></span>
+                </div>
+                <div class="split2">
+                    <h4>SPLIT BET</h4>
+                    <select name="amount" id="split2_amount">
+                        <option value="50">50</option>
+                        <option value="500">500</option>
+                        <option value="2500">2500</option>
+                        <option value="5000">5000</option>
+                        <option value="12500">12500</option>
+                        <option value="50000">50000</option>
+                    </select>
+                    <select name="times" id="split2_times">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <span class="span0">0</span>
+                    <span class="span1">1<span data-id="1_2"></span></span>
+                    <span class="span2">2<span data-id="2_3"></span></span>
+                    <span class="span3">3</span>
+                    <span class="span4">4<span data-id="4_5"></span></span>
+                    <span class="span5">5<span data-id="5_6"></span></span>
+                    <span class="span6">6</span>
+                    <span class="span7">7<span data-id="7_8"></span></span>
+                    <span class="span8">8<span data-id="8_9"></span></span>
+                    <span class="span9">9</span>
+                    <span class="span10">10<span data-id="10_11"></span></span>
+                    <span class="span11">11<span data-id="11_12"></span></span>
+                    <span class="span12">12</span>
+                    <span class="span13">13<span data-id="13_14"></span></span>
+                    <span class="span14">14<span data-id="14_15"></span></span>
+                    <span class="span15">15</span>
+                    <span class="span16">16<span data-id="16_17"></span></span>
+                    <span class="span17">17<span data-id="17_18"></span></span>
+                    <span class="span18">18</span>
+                    <span class="span19">19<span data-id="19_20"></span></span>
+                    <span class="span20">20<span data-id="20_21"></span></span>
+                    <span class="span21">21</span>
+                    <span class="span22">22<span data-id="22_23"></span></span>
+                    <span class="span23">23<span data-id="23_24"></span></span>
+                    <span class="span24">24</span>
+                    <span class="span25">25<span data-id="25_26"></span></span>
+                    <span class="span26">26<span data-id="26_27"></span></span>
+                    <span class="span27">27</span>
+                    <span class="span28">28<span data-id="28_29"></span></span>
+                    <span class="span29">29<span data-id="29_30"></span></span>
+                    <span class="span30">30</span>
+                    <span class="span31">31<span data-id="31_32"></span></span>
+                    <span class="span32">32<span data-id="32_33"></span></span>
+                    <span class="span33">33</span>
+                    <span class="span34">34<span data-id="34_35"></span></span>
+                    <span class="span35">35<span data-id="35_36"></span></span>
+                    <span class="span36">36</span>
+                </div>
+                <div class="corner">
+                    <h4>CORNER BET</h4>
+                    <select name="amount" id="corner_amount">
+                        <option value="50">50</option>
+                        <option value="500">500</option>
+                        <option value="2500">2500</option>
+                        <option value="5000">5000</option>
+                        <option value="12500">12500</option>
+                        <option value="50000">50000</option>
+                    </select>
+                    <select name="times" id="corner_times">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <span class="span0">0</span>
+                    <span class="span1">1<span data-id="0_1_2"></span></span>
+                    <span class="span2">2<span data-id="0_2_3"></span></span>
+                    <span class="span3">3</span>
+                    <span class="span4">4<span data-id="1_2_4_5"></span></span>
+                    <span class="span5">5<span data-id="2_3_5_6"></span></span>
+                    <span class="span6">6</span>
+                    <span class="span7">7<span data-id="4_5_7_8"></span></span>
+                    <span class="span8">8<span data-id="5_6_8_9"></span></span>
+                    <span class="span9">9</span>
+                    <span class="span10">10<span data-id="7_8_10_11"></span></span>
+                    <span class="span11">11<span data-id="8_9_11_12"></span></span>
+                    <span class="span12">12</span>
+                    <span class="span13">13<span data-id="10_11_13_14"></span></span>
+                    <span class="span14">14<span data-id="11_12_14_15"></span></span>
+                    <span class="span15">15</span>
+                    <span class="span16">16<span data-id="13_14_16_17"></span></span>
+                    <span class="span17">17<span data-id="14_15_17_18"></span></span>
+                    <span class="span18">18</span>
+                    <span class="span19">19<span data-id="16_17_19_20"></span></span>
+                    <span class="span20">20<span data-id="17_18_20_21"></span></span>
+                    <span class="span21">21</span>
+                    <span class="span22">22<span data-id="19_20_22_23"></span></span>
+                    <span class="span23">23<span data-id="20_21_23_24"></span></span>
+                    <span class="span24">24</span>
+                    <span class="span25">25<span data-id="22_23_25_26"></span></span>
+                    <span class="span26">26<span data-id="23_24_26_27"></span></span>
+                    <span class="span27">27</span>
+                    <span class="span28">28<span data-id="25_26_28_29"></span></span>
+                    <span class="span29">29<span data-id="26_27_29_30"></span></span>
+                    <span class="span30">30</span>
+                    <span class="span31">31<span data-id="28_29_31_32"></span></span>
+                    <span class="span32">32<span data-id="29_30_32_33"></span></span>
+                    <span class="span33">33</span>
+                    <span class="span34">34<span data-id="31_32_34_35"></span></span>
+                    <span class="span35">35<span data-id="32_33_35_36"></span></span>
+                    <span class="span36">36</span>
+                </div>
+                <div class="street">
+                    <h4>STREET BET</h4>
+                    <select name="amount" id="street_amount">
+                        <option value="50">50</option>
+                        <option value="500">500</option>
+                        <option value="2500">2500</option>
+                        <option value="5000">5000</option>
+                        <option value="12500">12500</option>
+                        <option value="50000">50000</option>
+                    </select>
+                    <select name="times" id="street_times">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <span class="span0">0</span>
+                    <span class="span1">1<span data-id="1_2_3"></span></span>
+                    <span class="span2">2</span>
+                    <span class="span3">3</span>
+                    <span class="span4">4<span data-id="4_5_6"></span></span>
+                    <span class="span5">5</span>
+                    <span class="span6">6</span>
+                    <span class="span7">7<span data-id="7_8_9"></span></span>
+                    <span class="span8">8</span>
+                    <span class="span9">9</span>
+                    <span class="span10">10<span data-id="10_11_12"></span></span>
+                    <span class="span11">11</span>
+                    <span class="span12">12</span>
+                    <span class="span13">13<span data-id="13_14_15"></span></span>
+                    <span class="span14">14</span>
+                    <span class="span15">15</span>
+                    <span class="span16">16<span data-id="16_17_18"></span></span>
+                    <span class="span17">17</span>
+                    <span class="span18">18</span>
+                    <span class="span19">19<span data-id="19_20_21"></span></span>
+                    <span class="span20">20</span>
+                    <span class="span21">21</span>
+                    <span class="span22">22<span data-id="22_23_24"></span></span>
+                    <span class="span23">23</span>
+                    <span class="span24">24</span>
+                    <span class="span25">25<span data-id="25_26_27"></span></span>
+                    <span class="span26">26</span>
+                    <span class="span27">27</span>
+                    <span class="span28">28<span data-id="28_29_30"></span></span>
+                    <span class="span29">29</span>
+                    <span class="span30">30</span>
+                    <span class="span31">31<span data-id="31_32_33"></span></span>
+                    <span class="span32">32</span>
+                    <span class="span33">33</span>
+                    <span class="span34">34<span data-id="34_35_36"></span></span>
+                    <span class="span35">35</span>
+                    <span class="span36">36</span>
+                </div>
+                <div class="line">
+                    <h4>LINE BET</h4>
+                    <select name="amount" id="line_amount">
+                        <option value="50">50</option>
+                        <option value="500">500</option>
+                        <option value="2500">2500</option>
+                        <option value="5000">5000</option>
+                        <option value="12500">12500</option>
+                        <option value="50000">50000</option>
+                    </select>
+                    <select name="times" id="line_times">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <span class="span0">0</span>
+                    <span class="span1">1<span data-id="0_1_2_3"></span></span>
+                    <span class="span2">2</span>
+                    <span class="span3">3</span>
+                    <span class="span4">4<span data-id="1_2_3_4_5_6"></span></span>
+                    <span class="span5">5</span>
+                    <span class="span6">6</span>
+                    <span class="span7">7<span data-id="4_5_6_7_8_9"></span></span>
+                    <span class="span8">8</span>
+                    <span class="span9">9</span>
+                    <span class="span10">10<span data-id="7_8_9_10_11_12"></span></span>
+                    <span class="span11">11</span>
+                    <span class="span12">12</span>
+                    <span class="span13">13<span data-id="10_11_12_13_14_15"></span></span>
+                    <span class="span14">14</span>
+                    <span class="span15">15</span>
+                    <span class="span16">16<span data-id="13_14_15_16_17_18"></span></span>
+                    <span class="span17">17</span>
+                    <span class="span18">18</span>
+                    <span class="span19">19<span data-id="16_17_18_19_20_21"></span></span>
+                    <span class="span20">20</span>
+                    <span class="span21">21</span>
+                    <span class="span22">22<span data-id="19_20_21_22_23_24"></span></span>
+                    <span class="span23">23</span>
+                    <span class="span24">24</span>
+                    <span class="span25">25<span data-id="22_23_24_25_26_27"></span></span>
+                    <span class="span26">26</span>
+                    <span class="span27">27</span>
+                    <span class="span28">28<span data-id="25_26_27_28_29_30"></span></span>
+                    <span class="span29">29</span>
+                    <span class="span30">30</span>
+                    <span class="span31">31<span data-id="28_29_30_31_32_33"></span></span>
+                    <span class="span32">32</span>
+                    <span class="span33">33</span>
+                    <span class="span34">34<span data-id="31_32_33_34_35_36"></span></span>
+                    <span class="span35">35</span>
+                    <span class="span36">36</span>
+                </div>
+            </article>
+            <h3>Outside Bets</h3>
+            <ul class="outside">
+            <li class="span1-18">
+                <b>1-18</b><span data-id="from1to18"><span></span></span>
+                <select name="amount" id="out1_amount">
+                    <option value="50">50</option>
+                    <option value="500">500</option>
+                    <option value="2500">2500</option>
+                    <option value="5000">5000</option>
+                    <option value="12500">12500</option>
+                    <option value="50000">50000</option>
+                </select>
+                <select name="times" id="out1_times">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </li>
+            <li class="span19-36">
+                <b>19-36</b><span data-id="from19to36"><span></span></span>
+                <select name="amount" id="out2_amount">
+                    <option value="50">50</option>
+                    <option value="500">500</option>
+                    <option value="2500">2500</option>
+                    <option value="5000">5000</option>
+                    <option value="12500">12500</option>
+                    <option value="50000">50000</option>
+                </select>
+                <select name="times" id="out2_times">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </li>
+            <li class="spaneven">
+                <b>EVEN</b><span data-id="even"><span></span></span>
+                <select name="amount" id="out3_amount">
+                    <option value="50">50</option>
+                    <option value="500">500</option>
+                    <option value="2500">2500</option>
+                    <option value="5000">5000</option>
+                    <option value="12500">12500</option>
+                    <option value="50000">50000</option>
+                </select>
+                <select name="times" id="out3_times">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </li>
+            <li class="spanodd">
+                <b>ODD</b><span data-id="odd"><span></span></span>
+                <select name="amount" id="out4_amount">
+                    <option value="50">50</option>
+                    <option value="500">500</option>
+                    <option value="2500">2500</option>
+                    <option value="5000">5000</option>
+                    <option value="12500">12500</option>
+                    <option value="50000">50000</option>
+                </select>
+                <select name="times" id="out4_times">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </li>
+            <li class="spanred">
+                <b>RED</b><span data-id="red"><span></span></span>
+                <select name="amount" id="out5_amount">
+                    <option value="50">50</option>
+                    <option value="500">500</option>
+                    <option value="2500">2500</option>
+                    <option value="5000">5000</option>
+                    <option value="12500">12500</option>
+                    <option value="50000">50000</option>
+                </select>
+                <select name="times" id="out5_times">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </li>
+            <li class="spanblack">
+                <b>BLACK</b><span data-id="black"><span></span></span>
+                <select name="amount" id="out6_amount">
+                    <option value="50">50</option>
+                    <option value="500">500</option>
+                    <option value="2500">2500</option>
+                    <option value="5000">5000</option>
+                    <option value="12500">12500</option>
+                    <option value="50000">50000</option>
+                </select>
+                <select name="times" id="out6_times">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </li>
+            <li class="span1st-12">
+                <b>1ST 12</b><span data-id="1st12"><span></span></span>
+                <select name="amount" id="out7_amount">
+                    <option value="50">50</option>
+                    <option value="500">500</option>
+                    <option value="2500">2500</option>
+                    <option value="5000">5000</option>
+                    <option value="12500">12500</option>
+                    <option value="50000">50000</option>
+                </select>
+                <select name="times" id="out7_times">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </li>
+            <li class="span2nd-12">
+                <b>2ND 12</b><span data-id="2nd12"><span></span></span>
+                <select name="amount" id="out8_amount">
+                    <option value="50">50</option>
+                    <option value="500">500</option>
+                    <option value="2500">2500</option>
+                    <option value="5000">5000</option>
+                    <option value="12500">12500</option>
+                    <option value="50000">50000</option>
+                </select>
+                <select name="times" id="out8_times">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </li>
+            <li class="span3rd-12">
+                <b>3RD 12</b><span data-id="3rd12"><span></span></span>
+                <select name="amount" id="out9_amount">
+                    <option value="50">50</option>
+                    <option value="500">500</option>
+                    <option value="2500">2500</option>
+                    <option value="5000">5000</option>
+                    <option value="12500">12500</option>
+                    <option value="50000">50000</option>
+                </select>
+                <select name="times" id="out9_times">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </li>
+            <li class="span1st-2-1">
+                <b>1ST 2_1</b><span data-id="top2to1"><span></span></span>
+                <select name="amount" id="out10_amount">
+                    <option value="50">50</option>
+                    <option value="500">500</option>
+                    <option value="2500">2500</option>
+                    <option value="5000">5000</option>
+                    <option value="12500">12500</option>
+                    <option value="50000">50000</option>
+                </select>
+                <select name="times" id="out10_times">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </li>
+            <li class="span2nd-2-1">
+                <b>2ND 2_1</b><span data-id="middle2to1"><span></span></span>
+                <select name="amount" id="out11_amount">
+                    <option value="50">50</option>
+                    <option value="500">500</option>
+                    <option value="2500">2500</option>
+                    <option value="5000">5000</option>
+                    <option value="12500">12500</option>
+                    <option value="50000">50000</option>
+                </select>
+                <select name="times" id="out11_times">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </li>
+            <li class="span3rd-2-1">
+                <b>3RD 2_1</b><span data-id="bottom2to1"><span></span></span>
+                <select name="amount" id="out12_amount">
+                    <option value="50">50</option>
+                    <option value="500">500</option>
+                    <option value="2500">2500</option>
+                    <option value="5000">5000</option>
+                    <option value="12500">12500</option>
+                    <option value="50000">50000</option>
+                </select>
+                <select name="times" id="out12_times">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </li>
+            </ul>
+            <center><h4 class="pattern_save"></h4></center>
+            <center><h4><button id="strategysave">Save Changes</button></h4></center>
+        </div>
+        <div>
+            <center>
+            <article>
+                <label for="">Set Fails</label><br>
+                <input type="range" max="50" min="0" name="fails" id="x"><output id="fail">25</output><br>
+            </article>
+            <article>
+                <label for="">Set Play Times</label><br>
+                <input type="range" max="50" min="0" name="plays" id="y"><output id="play">25</output><br>
+            </article>
+            <article>
+                <label for="">Set Play Amount</label><br>
+                <select name="amount" id="amount">
+                    
+                    <option value="50">50</option>
+                    <option value="500">500</option>
+                    <option value="2500">2500</option>
+                    <option value="5000">5000</option>
+                    <option value="12500">12500</option>
+                    <option value="50000">50000</option>
+                </select><br>
+            </article>
+            <article>
+                <label for="">Set Progression</label><br>
+                <b>x</b><input type="number" max="6" min="1" value="2" name="multiple" id="multiple"><br>
+            </article>
+          </center>
+          <center><h4 class="playsave"></h4></center> 
+          <center><button id="playsave">Save Changes</button></center>
+        </div>
+        <div>
+            <label>Rounds:</label>
+            <h4>30</h4>
+            <label>Fail times:</label>
+            <h4>4</h4>
+            <label>Wins:</label>
+            <h4>23</h4>
+            <label>Losses</label>
+            <h4>7</h4>
+            <label>Amount Gained</label>
+            <h4>&#8358;7000</h4>
+        </div>
+    </section>
+    <script src="popup.js"></script>
+</body>
+</html>

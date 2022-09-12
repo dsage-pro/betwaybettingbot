@@ -1,0 +1,511 @@
+body{
+    margin: 0;
+    background-color: beige;
+}
+*{
+    margin: 0;
+}
+.span0{
+    background-color: green;
+}
+.span1{
+  background-color: red;
+  color: white;
+}
+.span2{
+  background-color: black;
+  color: white;
+}
+.span3{
+  background-color: red;
+  color: white;
+}
+.span4{
+  background-color: black;
+  color: white;
+}
+.span5{
+  background-color: red;
+  color: white;
+}
+.span6{
+   background-color: black;
+   color: white;
+}
+.span7{
+   background-color: red;
+   color: white;
+}
+.span8{
+   background-color: black;
+   color: white;
+}
+.span9{
+   background-color: red;
+   color: white;
+}
+.span10{
+  background-color: black;
+  color: white;
+}
+.span11{
+  background-color: black;
+  color: white;
+}
+.span12{
+  background-color: red;
+  color: white;
+}
+.span13{
+  background-color: black;
+  color: white;
+}
+.span14{
+  background-color: red;
+  color: white;
+}
+.span15{
+  background-color: black;
+  color: white;
+}
+.span16{
+  background-color: red;
+  color: white;
+}
+.span17{
+  background-color: black;
+  color: white;
+}
+.span18{
+  background-color: red;
+  color: white;
+}
+.span19{
+  background-color: red;
+  color: white;
+}
+.span20{
+  background-color: black;
+  color: white;
+}
+.span21{
+  background-color: red;
+  color: white;
+}
+.span22{
+  background-color: black;
+  color: white;
+}
+.span23{
+  background-color: red;
+  color: white;
+}
+.span24{
+  background-color: black;
+  color: white;
+}
+.span25{
+  background-color: red;
+  color: white;
+}
+.span26{
+  background-color: black;
+  color: white;
+}
+.span27{
+  background-color: red;
+  color: white;
+}
+.span28{
+  background-color: black;
+  color: white;
+}
+.span29{
+  background-color: black;
+  color: white;
+}
+.span30{
+  background-color: red;
+  color: white;
+}
+.span31{
+  background-color: black;
+  color: white;
+}
+.span32{
+  background-color: red;
+  color: white;
+}
+.span33{
+  background-color: black;
+  color: white;
+}
+.span34{
+  background-color: red;
+  color: white;
+}
+.span35{
+ background-color: red;
+ color: white;
+}
+.span36{
+  background-color: red;
+  color: white;
+}
+.span1-18{
+  background-color: red;
+  color: white;
+}
+.span19-36{
+   background-color: black;
+   color: white;
+}
+.spaneven{
+  background-color: black;
+  color: white;
+}
+.spanodd{
+  background-color: red;
+  color: white;
+}
+.spanred{
+  background-color: red;
+  color: white;
+}
+.spanblack{
+ background-color: black;
+ color: white;
+}
+.span1st-12{
+  background-color: black;
+  color: white;
+}
+.span2nd-12{
+ background-color: red;
+ color: white;
+}
+.span3rd-12{
+  background-color: black;
+  color: white;
+}
+.span1st-2-1{
+ background-color: red;
+ color: white;
+}
+.span2nd-2-1{
+ background-color: black;
+ color: white;
+}
+.span3rd-2-1{
+  background-color: red;
+  color: white;
+} 
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.header{
+    text-align: center;
+    width: 100%;
+    font-size: larger;
+    padding-top: 29px;
+} 
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 2px 0;
+}
+header nav ul li{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    color: #555;
+}
+.divs > div{
+    display: none;
+    width: 98vw;
+    margin: 0 auto;
+    /* padding: 10px 5px; */
+}
+.divs > :nth-child(2){
+    padding: 5px 10px 20px;
+    background-color: whitesmoke;
+    width: 475px;
+}
+.divs > :nth-child(3){
+    padding: 5px 10px 20px;
+    background-color: whitesmoke;
+    width: 475px;
+    height: 400px;
+}
+.divs > :nth-child(4){
+    padding: 20px 10px 20px;
+    background-color: rgba(229, 220, 220, 0.385);
+    width: 475px;
+    height: 400px;
+}
+#active{
+    padding: 5px 10px 20px;
+    background-color: whitesmoke;
+    display: block;
+    width: 475px;
+}
+#active main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 40px);
+    text-align: center;
+}
+#active main h4{
+    border: 1px solid rgb(211, 211, 211);
+    text-align: center; 
+    padding-top: 10px;  
+    border-radius: 5px;
+    margin: 2px;
+    background-color: rgba(171, 171, 171, 0.2);
+}
+.numbers_colors{
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns:repeat(6, 1fr);
+  text-align: center;
+  background-color: whitesmoke;
+  border: 1px solid grey;
+}
+.numbers_colors li{
+    border: 1px solid grey;
+    padding: 10% 0;
+}
+.bets{
+    margin-bottom: 20px;
+}
+.bets > h4{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+button{
+   padding: 10px 20px;
+   cursor: pointer;
+   background-color: teal;
+   border: 2px solid #444;
+   border-radius: 5px;
+   color: rgb(220, 232, 225);
+   text-transform: uppercase;
+   font-weight: 900;
+   font-size: 15px;
+   margin-top: 10px;
+}
+.divs > :nth-child(2) article{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.divs > :nth-child(2) article > div{
+    display: grid;
+    grid-template-rows: repeat(15,30px);
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    width: 30%;
+    /* border: 1px solid grey; */
+    margin-bottom: 20px;
+}
+.divs > :nth-child(2) article > div > :nth-child(1){
+    grid-column: 1/4;
+}
+.divs > :nth-child(2) article > div > :nth-child(2){
+    grid-column: 1/3;
+}
+.divs > :nth-child(2) article > div > :nth-child(3){
+    grid-column: 3/4;
+}
+.divs > :nth-child(2) article > div > :nth-child(4){
+    grid-column: 1/4;
+}
+.divs > :nth-child(2) article > div > select{
+    background-color: rgb(34, 30, 30);
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    margin: 1px auto;
+    width: 100%;
+    padding: 0 3px;
+}
+.divs > :nth-child(2) article > div > span{
+    padding-top: 5px;
+    display: block;
+    border: 1px solid grey;
+}
+.divs > :nth-child(2) article > :nth-child(1) > span > span{
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.divs > :nth-child(2) article > :nth-child(2) > span > span{
+    border-radius: 15px;
+    background-color: white;
+    display: block;
+    height: 15px;
+    width: 15px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    position: relative;
+    bottom: 30px;
+    cursor: pointer;
+}
+.divs > :nth-child(2) article > :nth-child(3) > span > span{
+    border-radius: 15px;
+    background-color: white;
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    position: relative;
+    left: 24px;
+    bottom: 18px;
+    cursor: pointer;
+}
+.divs > :nth-child(2) article > :nth-child(4) > span > span{
+    border-radius: 15px;
+    background-color: white;
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    position: relative;
+    left: 23px;
+    bottom: 32px;
+    cursor: pointer;
+}
+.divs > :nth-child(2) article > :nth-child(5) > span > span{
+    border-radius: 15px;
+    background-color: white;
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    position: relative;
+    right: 23px;
+    bottom: 18px;
+    cursor: pointer;
+}
+.divs > :nth-child(2) article > :nth-child(6) > span > span{
+    border-radius: 15px;
+    background-color: white;
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    position: relative;
+    right: 23px;
+    bottom: 34px;
+    cursor: pointer;
+}
+
+.divs > :nth-child(2) ul{
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.divs > :nth-child(2) ul li > b{
+    padding: 10px 7px;
+    display: inline-block;
+    width: 60px;
+}
+.divs > :nth-child(2) ul li{
+    border: 1pt solid white;
+    padding-top: 15px;
+}
+.divs > :nth-child(2) h3{
+    padding: 15px 0;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.divs > :nth-child(2) ul li > span{
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 0;
+    padding-bottom: 10px;
+    padding-right: 23px; 
+    content: "";
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.divs > :nth-child(2) ul li > span > span{
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    content: "";
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.divs > :nth-child(2) ul li > select{
+    background-color: rgb(34, 30, 30);
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    margin: 5px 0;
+}
+.divs > :nth-child(3) article{
+    background-color:rgb(219, 202, 222);
+    border-radius: 4px;
+    border: 1px solid grey;
+    padding: 20px 0;
+    margin: 2px 0;
+    color: #333;
+}
+.divs > :nth-child(3) article > input[type="range"]{
+    width: 200px;
+    height: 2px;
+}
+.divs > :nth-child(3) article > select{
+    width: 70px;
+    height: 30px;
+    border-radius: 4px;
+}
+.divs > :nth-child(3) article > input[type="number"]{
+    width: 30px;
+    height: 20px;
+    padding-left: 10px;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+.divs > :nth-child(3) article > output{
+    padding-left: 10px;
+}
+.divs > :nth-child(4) > label{
+    padding: 10px 10px;
+}
+.divs > :nth-child(4) > h4{
+    padding: 5px 10px 10px;
+}

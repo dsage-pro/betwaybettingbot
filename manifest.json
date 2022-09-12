@@ -1,0 +1,30 @@
+{
+    "name": "Betway Casino Betting",
+    "description": "An Extension to bet on the Betway casino!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["storage","tabs"],
+    "host_permissions": ["https://*.betway.com.gh/*", "https://*.betway.com.ng/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+      "matches": ["https://*.betway.com.gh/*", "https://*.betway.com.ng/*"],
+      "js": ["contentScript.js"]
+     }
+   ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/favicon/favicon-16x16.png",
+        "32": "/favicon/favicon-32x32.png",
+        "192": "/favicon/android-chrome-192x192.png"
+      }
+    },
+    "icons": {
+      "16": "/favicon/favicon-16x16.png",
+      "32": "/favicon/favicon-32x32.png",
+      "192": "/favicon/android-chrome-192x192.png"
+    }
+  }
